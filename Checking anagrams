@@ -1,0 +1,21 @@
+from collections import Counter
+def find_anagram(word, anagram):
+    # [assignment] Add your code here
+  
+
+      
+    
+    if Counter(word) == Counter(anagram):
+        return True
+        print('This is an anagram')
+    
+    else:
+        return False
+        print('This is not an anagram')
+
+if __name__ == "__main__":
+    word = input('Enter the first word(s): ')
+    anagram = input('Enter its anagram: ')
+    print (find_anagram(word, anagram))
+
+    
